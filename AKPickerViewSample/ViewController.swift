@@ -27,7 +27,7 @@ class ViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDele
 		self.pickerView.maskDisabled = false
         self.pickerView.highlightedTextColor = UIColor.blueColor()
 		self.pickerView.reloadData()
-	}
+   }
 
 	// MARK: - AKPickerViewDataSource
 
@@ -53,7 +53,7 @@ class ViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDele
 
 	// MARK: - AKPickerViewDelegate
 
-	func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
+    func pickerView(pickerView: AKPickerView, didSelectItem item: Int, animated: Bool) {
 		print("Your favorite city is \(self.titles[item])")
 	}
 
