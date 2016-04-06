@@ -97,7 +97,7 @@ private class AKCollectionViewCell: UICollectionViewCell {
         lineView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: contentView.bounds.size.height - 2), size: CGSize(width: contentView.bounds.size.width, height: 2)))
         lineView.alpha = 0.0
         lineView.backgroundColor = UIColor.blueColor()
-        self.lineView.autoresizingMask = [.FlexibleTopMargin, .FlexibleLeftMargin, .FlexibleBottomMargin, .FlexibleRightMargin]
+        self.lineView.autoresizingMask = [.FlexibleTopMargin, .FlexibleLeftMargin, .FlexibleBottomMargin, .FlexibleRightMargin, .FlexibleWidth]
         self.contentView.addSubview(self.lineView)
         
         
